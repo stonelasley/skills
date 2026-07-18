@@ -1,0 +1,14 @@
+{
+  "name": "st1-skills",
+  "owner": {
+    "name": "Stone C. Lasley",
+    "email": "stonelasley@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "starter",
+      "source": "./plugins/starter",
+      "description": "Example plugin demonstrating the skill and slash command layout."
+    }
+  ]
+}
