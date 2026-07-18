@@ -22,7 +22,7 @@ skills/
 ├── plugins/
 │   └── starter/              # example plugin proving the end-to-end flow
 │       ├── .claude-plugin/
-│       │   └── plugin.json   # name, description, version
+│       │   └── plugin.json   # name, description (no version — see below)
 │       ├── commands/
 │       │   └── hello.md      # /hello slash command
 │       └── skills/
@@ -52,7 +52,7 @@ skills/
 - Adding the marketplace: `/plugin marketplace add stonelasley/skills`
 - Installing a plugin: `/plugin install starter@st1-skills`
 - How to add a new plugin: copy the `starter/` layout, add an entry to
-  `marketplace.json`, bump version, push.
+  `marketplace.json`, push.
 
 ## Data flow / usage
 
