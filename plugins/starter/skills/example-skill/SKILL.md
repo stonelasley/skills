@@ -15,7 +15,7 @@ A plugin in this marketplace looks like this:
 ```
 plugins/<plugin-name>/
 ├── .claude-plugin/
-│   └── plugin.json          # name, description, version
+│   └── plugin.json          # name, description (no version — see below)
 ├── commands/
 │   └── <command>.md         # each file becomes /<command>
 └── skills/
@@ -28,11 +28,16 @@ Both `commands/` and `skills/` are optional — include whichever the plugin nee
 ## Adding a new plugin
 
 1. Copy this layout to `plugins/<new-name>/`.
-2. Set `name`, `description`, and `version` in its `plugin.json`.
+2. Set `name` and `description` in its `plugin.json`. Leave `version` out — with
+   no `version`, the git commit SHA is the version, so every pushed commit
+   reaches users. A pinned `version` string blocks updates until it is bumped.
 3. Add a matching entry to `.claude-plugin/marketplace.json` with a `source`
    of `./plugins/<new-name>`.
 4. Commit and push, then run `/plugin marketplace update st1-skills` on other
    machines.
+
+Adding a skill to an *existing* plugin needs no marketplace edit — the new
+`skills/<name>/SKILL.md` ships with the next commit.
 
 ## Writing the description field
 

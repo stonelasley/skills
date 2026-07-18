@@ -1,7 +1,6 @@
 {
   "name": "starter",
   "description": "Example plugin demonstrating the skill and slash command layout.",
-  "version": "0.1.0",
   "author": {
     "name": "Stone C. Lasley"
   }
