@@ -9,6 +9,11 @@
       "name": "starter",
       "source": "./plugins/starter",
       "description": "Example plugin demonstrating the skill and slash command layout."
+    },
+    {
+      "name": "github-triage",
+      "source": "./plugins/github-triage",
+      "description": "Triage recently-filed GitHub issues and rate their readiness for agent implementation."
     }
   ]
 }

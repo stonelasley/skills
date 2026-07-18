@@ -1,0 +1,7 @@
+{
+  "name": "github-triage",
+  "description": "Triage recently-filed GitHub issues and rate their readiness for agent implementation.",
+  "author": {
+    "name": "Stone C. Lasley"
+  }
+}
