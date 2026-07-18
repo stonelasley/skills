@@ -40,7 +40,9 @@ skills/
   `./plugins/starter`), and `description`.
 
 ### starter plugin
-- `plugin.json`: name `starter`, semantic version starting at `0.1.0`.
+- `plugin.json`: name and description only. **No `version` field** — a pinned
+  version blocks updates for already-installed users until the string is bumped;
+  omitting it makes the git commit SHA the version so every push propagates.
 - `commands/hello.md`: a minimal `/hello` command with frontmatter `description`,
   demonstrating command structure.
 - `skills/example-skill/SKILL.md`: a minimal skill with `name` and `description`
